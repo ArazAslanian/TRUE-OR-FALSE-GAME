@@ -35,32 +35,3 @@ void loop() {
 
   }
 }
-
-
-//String msg;
-//boolean isOn = false;
-//
-//void setup() {
-//  // put your setup code here, to run once:
-//Serial.begin(9600);
-//pinMode(13,OUTPUT);
-//}
-//
-//void loop() {
-//  // put your main code here, to run repeatedly:
-//  while(Serial.available()){
-//    msg = Serial.readString();
-//    msg.trim(); // so that the string does not go through with extra strings, it will cut any white spaces
-//
-//    //return message to confirm received:
-//    if(msg == "on"){
-//      if(isOn){
-//      digitalWrite(13,LOW);
-//      isOn = false;
-//    } else {
-//      digitalWrite(13,HIGH);
-//      isOn = true;
-//    }
-//    }
-//  }
-//}
