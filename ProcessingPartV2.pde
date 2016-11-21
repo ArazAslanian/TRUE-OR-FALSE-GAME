@@ -40,9 +40,9 @@ void setup() {
   size(800, 600);
 
   //specifying the port and other settings to allow communication
-  //String portName = "COM3";
-  //myPort = new Serial(this, portName, 9600);
-  //myPort.bufferUntil('\n');
+  String portName = "COM3";
+  myPort = new Serial(this, portName, 9600);
+  myPort.bufferUntil('\n');
 
   // the variables for the bom
   counter1G = 3.92699081698;
@@ -342,7 +342,7 @@ void mouseClicked() {
       correct = true;
       if (!isSent) {
         println("Sending!");
-        //myPort.write("on");
+        myPort.write("on");
         isSent = true;
       }
       isSent=false;
@@ -351,7 +351,7 @@ void mouseClicked() {
       wrong =true;
       if (!isSent) {
         println("Sending!");
-        //myPort.write("off");
+        myPort.write("off");
         isSent = true;
       }
       isSent=false;
@@ -365,7 +365,7 @@ void mouseClicked() {
       wrong = true;
       if (!isSent) {
         println("Sending!");
-        // myPort.write("off");
+        myPort.write("off");
         isSent = true;
       }
       isSent = false;
@@ -374,7 +374,7 @@ void mouseClicked() {
       correct =true;
       if (!isSent) {
         println("Sending!");
-        //myPort.write("on");
+        myPort.write("on");
         isSent = true;
       }
       isSent = false;
